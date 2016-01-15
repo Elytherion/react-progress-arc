@@ -1,7 +1,7 @@
 react-progress-arc
 ====================
 
-An [ReactJS](http://facebook.github.io/react/index.html) directive for displaying a circular progress meter. This is a fork of the [AngularJS equivalent](https://github.com/mathewbyrne/angular-progress-arc).
+An [ReactJS](http://facebook.github.io/react/index.html) component for displaying a circular progress meter. This is a fork of the [AngularJS equivalent](https://github.com/mathewbyrne/angular-progress-arc).
 
 <p align="center"><img src="http://mathewbyrne.github.io/angular-progress-arc/img/arcs.png" /></p>
 
