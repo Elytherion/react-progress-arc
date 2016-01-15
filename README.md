@@ -48,9 +48,9 @@ React.createElement(ProgressArc, {
 Attributes
 ----------
 
-- `size` defines the pixel width and height for the svg element.  This defaults to __200__.
-- `stroke` defines the color of the progress arc. This should be a valid [stroke property](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes#Stroke) for an SVG circle element.  This defaults to __black__.
-- `stroke-width` defines the width of the progress arc line in pixels. This should be a value between 1 and `size` / 2. This defaults to __20__.
+- `size` defines the pixel width and height for the svg element.  This defaults to __100__.
+- `stroke` defines the color of the progress arc. This should be a valid [stroke property](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes#Stroke) for an SVG circle element.  This defaults to __white__.
+- `stroke-width` defines the width of the progress arc line in pixels. This should be a value between 1 and `size` / 2. This defaults to __10__.
 - `complete` is an expression that should evaluate to a float value between 0.0 and 1.0; where 0.0 is an empty progress arc, and 1.0 is a full ring.
 - `counter-clockwise` is a boolean value that will render the progress arc in a counter-clockwise direction. Any value Javascript would recognise as true will be treated as such, with the exception of the literal string __false__ which will be treated as a boolean `false`.
 - `background` defines the color of the ring background. If not defined, no background is rendered.
