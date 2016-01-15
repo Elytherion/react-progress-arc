@@ -1,11 +1,9 @@
-angular-progress-arc
+react-progress-arc
 ====================
 
-An [AngularJS](https://angularjs.org/) directive for displaying a circular progress meter.
+An [ReactJS](http://facebook.github.io/react/index.html) directive for displaying a circular progress meter.
 
 <p align="center"><img src="http://mathewbyrne.github.io/angular-progress-arc/img/arcs.png" /></p>
-
-[Demo](http://mathewbyrne.github.io/angular-progress-arc/)
 
 Features
 ========
@@ -13,7 +11,7 @@ Features
 - Displays a circular progress meter.
 - Utilises SVG for rendering.
 - Adjustable dimensions, color and thickness.
-- No additional dependencies outside of AngularJS.
+- No additional dependencies outside of React.
 
 Installation
 ============
