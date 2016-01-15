@@ -1,7 +1,7 @@
 react-progress-arc
 ====================
 
-An [ReactJS](http://facebook.github.io/react/index.html) directive for displaying a circular progress meter.
+An [ReactJS](http://facebook.github.io/react/index.html) directive for displaying a circular progress meter. This is a fork of the [AngularJS equivalent](https://github.com/mathewbyrne/angular-progress-arc).
 
 <p align="center"><img src="http://mathewbyrne.github.io/angular-progress-arc/img/arcs.png" /></p>
 
@@ -16,34 +16,33 @@ Features
 Installation
 ============
 
-This module can be installed using bower:
-
-```shell
-bower install angular-progress-arc --save
-```
-
-Otherwise, simply add the `angular-progress-arc.min.js` file to your project.
+You can add the plugin by adding react-progress-arc-x.x.x.js to your project.
 
 Usage
 =====
 
-Include the script in your application and include the `angular-progress-arc` module as a dependency in your application module.
+Include the script in your application. Add a ProgressArc element where needed.
 
 ```javascript
-angular.module('myApp', ['angular-progress-arc']);
+React.createElement(ProgressArc, {
+    size: {integer},
+    stroke: {string},
+    strokeWidth: {integer},
+    complete: {expression},
+    counterClockwise: {string},
+    background: {string}
+})
 ```
 
-Add a `progress-arc` element to your application as required.
-
-```html
-<progress-arc
+```jsx
+<ProgressArc
     size="{integer}"
     stroke="{string}"
     stroke-width="{integer}"
     complete="{expression}"
     counter-clockwise="{string}"
-    background="{string}">
-</progress-arc>
+    background="{string}"
+/>
 ```
 
 Attributes
@@ -85,19 +84,9 @@ If you use CSS for styling, avoid setting the following properties that are used
 Defaults
 ========
 
-This module provides a service for configuring application-wide defaults for `progress-arc` directives.  To change default values, inject the `progressArcDefaultsProvider` into your module's config method:
-
-```javascript
-myApp.config(['progressArcDefaultsProvider', function (progressArcDefaultsProvider) {
-    progressArcDefaultsProvider
-        .setDefault('background', '#aaa')
-        .setDefault('size', 300);
-});
-```
-
-The values you can configure this way are `size`, `strokeWidth`, `stroke` and `background`.
+For the current version you can't use an external function, but you have to change the corresponding values in the `getDefaultProps`. Maybe somebody knows how to change the default props with an external function.
 
 License
 =======
 
-angular-progress-arc is licensed under the MIT license. See LICENSE for details.
+react-progress-arc is licensed under the MIT license. See LICENSE for details.
